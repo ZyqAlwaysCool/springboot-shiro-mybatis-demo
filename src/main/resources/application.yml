@@ -1,0 +1,11 @@
+mybatis:
+  type-aliases-package: com.zyq.pojo
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+spring:
+  datasource:
+    url: jdbc:mysql://172.20.46.192:3306/shiro-demo?useUnicode=true&characterEncoding=utf8&useSSL=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver

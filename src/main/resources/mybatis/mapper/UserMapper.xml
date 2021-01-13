@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zyq.mapper.UserMapper">
+    <select id="getUserByName" resultType="User">
+        select * from user
+        where user.name = #{name}
+    </select>
+    <insert id="addUser">
+        insert into user(`id`, `name`, `pwd`, `perm`)
+        values (#{id}, #{name}, #{pwd}, #{perm})
+    </insert>
+</mapper>
