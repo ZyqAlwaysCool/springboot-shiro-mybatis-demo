@@ -26,6 +26,7 @@ create table user(
     `id` varchar(100) not null,
     `name` varchar(20) not null,
     `pwd` varchar(100) not null,
+    `perm` varchar(20) default null,
     primary key (`id`)
 )engine=innodb charset=utf8;
 ```
