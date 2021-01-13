@@ -17,6 +17,18 @@
     <artifactId>mysql-connector-java</artifactId>
 </dependency>
 ```
+* sql
+```sql
+create database `shiro-demo`;
+use `shiro-demo`;
+
+create table user(
+    `id` varchar(100) not null,
+    `name` varchar(20) not null,
+    `pwd` varchar(100) not null,
+    primary key (`id`)
+)engine=innodb charset=utf8;
+```
 ### mybatis
 * 导入依赖
 ```xml
